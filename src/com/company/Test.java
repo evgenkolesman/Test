@@ -1,21 +1,18 @@
 package com.company;
 
 public class Test {
+    private static int size =10;
+    private static int[] sourceArr = new int[size];
+
     public static void main(String[] args) {
-        int size = 10;
-        int[] sourceArr = new int[size];
-        //sourceArr = new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-        //int[] destArr =new int [9];
+
         for (int i = 0; i < sourceArr.length; i++) {
             sourceArr[i] = i;
         }
-        //System.arraycopy(sourceArr, 4, destArr, 5,   4 );
         int index = 3;
         System.arraycopy(sourceArr, index, sourceArr, index - 1, sourceArr.length - index);
         sourceArr[sourceArr.length - 1] = 0;
-        //sourceArr[sourceArr.length]=sourceArr[size];
         size--;
-        //sourceArr [].System.arraycopy(sourceArr, index, sourceArr, index, sourceArr.length - index-1)}
         for (int i = 0; i < sourceArr.length; i++) {
             System.out.print(sourceArr[i] + " ");
         }
