@@ -1,7 +1,7 @@
 package com.company;
 
 public class Test {
-    private static int size =10;
+    private static int size =5;
     private static int[] sourceArr = new int[size];
 
     public static void main(String[] args) {
